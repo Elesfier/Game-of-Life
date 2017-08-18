@@ -9,6 +9,7 @@ namespace Life
       offset(std::to_string(_life_time).size()),
       matrix(get_content(_path))
   {
+    filename = filename.substr(0, filename.find_last_of(".csv")-3);
   }
 
   void Game::run()
@@ -50,7 +51,7 @@ namespace Life
   std::string Game::convert_to_suffix (unsigned long i)
   {
     std::stringstream ss;
-    ss << "_" << std::setw(offset) << std::setfill('0') << i;
+    ss << "_" << std::setw(offset) << std::setfill('0') << i << ".csv";
     return ss.str();
   }
 }

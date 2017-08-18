@@ -21,7 +21,7 @@ namespace Life
     std::string get_content (std::string filename);
     void save_to_file (std::string filename, std::string content);
 
-    const std::string filename;
+    std::string filename;
     const unsigned long life_time;
     const unsigned short offset;
     Matrix matrix;
