@@ -7,8 +7,8 @@ In this program we assume that cells outside the boundaries are always dead.
 
 How to use on Linux:
 
-$ cmake CMakeLists.txt
-$ make
-$ cd bin
+$ cmake CMakeLists.txt <br />
+$ make <br />
+$ cd bin <br />
 $ ./Life example.csv 100
 
